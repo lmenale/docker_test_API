@@ -1,0 +1,5 @@
+FROM python:slim-bullseye
+WORKDIR /app
+COPY test_authz.py /app/
+RUN pip install requests
+CMD ["python", "test_authz.py"]
